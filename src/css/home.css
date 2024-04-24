@@ -1,0 +1,58 @@
+[theme-mode="light"] {
+  --block-color: #f1f1f1;
+}
+
+[theme-mode="dark"] {
+  --block-color: #535353;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+main section {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  max-width: 870px;
+  overflow: visible;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  grid-template-rows: repeat(auto-fit, minmax(150px, 150px));
+
+  overflow-y: scroll;
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+.block {
+  min-height: 150px;
+  background: var(--block-color);
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.block i {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.block:hover {
+  box-shadow: 0 0 10px 3px var(--oposite-color);
+  transition: 0.1s ease-in;
+}

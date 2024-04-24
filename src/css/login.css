@@ -1,0 +1,67 @@
+main {
+    padding: 10svh 10svw;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form .input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+form .labels {
+    font-size: 1rem;
+}
+
+form .input {
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    background: var(--input-color);
+}
+
+form .check {
+    height: 20px;
+    width: 20px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.check-area {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form button {
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--buttontxt-color);
+    background: var(--button-color);
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 0.1rem;
+}
+
+form a {
+    color: var(--select-color);
+}
+
+#erros {
+    color: var(--erro-color);
+}

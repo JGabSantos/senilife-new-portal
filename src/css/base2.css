@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+[theme-mode="light"] {
+    /* Background Colors */
+    --base-color: #ffffff;
+    --oposite-color: #898989;
+    --button-color: #dcdcdc;
+    --buttontxt-color: #353535;
+    --select-color: #686868;
+    --input-color: #eeeeee;
+    --erro-color: #ff6969;
+}
+
+[theme-mode="dark"] {
+    /* Background Colors */
+    --base-color: #2d2d2d;
+    --oposite-color: #ffffff;
+    --button-color: #474646;
+    --buttontxt-color: #f8f8f8;
+    --select-color: #adadad;
+    --input-color: #fff;
+    --erro-color: #ff4343;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    scrollbar-width: thin;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--base-color);
+    overflow-y: scroll;
+    color: var(--oposite-color);
+}
+
+header {
+    height: 10svh;
+    padding: 0 20px;
+    border-bottom: 3px solid var(--oposite-color);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header img {
+    height: 40%;
+    margin-bottom: 25px;
+}
+
+nav {
+    height: 5svh;
+    border-bottom: 3px solid var(--oposite-color);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav a {
+    display: flex;
+    gap: 5px;
+}
+
+nav a:hover span {
+    text-decoration: underline;
+}
+
+nav span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main {
+    height: 75svh;
+}
+
+footer {
+    height: 10svh;
+    width: 100%;
+    padding: 0 20px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    border-top: 3px solid var(--oposite-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer span {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+footer a {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a span {
+    font-weight: 400;
+}
